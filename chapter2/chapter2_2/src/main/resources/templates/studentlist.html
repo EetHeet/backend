@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Welcome to the Haaga-Helia! </h1>
+    <li th:each="student : ${students}">
+        <td th:text="${student.firstName}">First Name</td> 
+        <td th:text="${student.lastName}">Last Name</td>
+    </li>
+</body>
+</html>
